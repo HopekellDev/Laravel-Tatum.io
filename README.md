@@ -1,17 +1,17 @@
 # ⛓ HopekellDev Laravel Tatum.io
 
-![Packagist Version](https://img.shields.io/packagist/v/hopekelldev/laravel-tatum-io)
-![PHP Version](https://img.shields.io/packagist/php-v/hopekelldev/laravel-tatum-io)
+![Packagist Version](https://img.shields.io/packagist/v/HopekellDev/Laravel-Tatum.io)
+![PHP Version](https://img.shields.io/packagist/php-v/HopekellDev/Laravel-Tatum.io)
 ![Laravel Version](https://img.shields.io/badge/Laravel-13.x-red)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Downloads](https://img.shields.io/packagist/dt/hopekelldev/laravel-tatum-io)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/?branch=main)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
-[![Build Status](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/build.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/build-status/main)
+![Downloads](https://img.shields.io/packagist/dt/HopekellDev/Laravel-Tatum.io)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/?branch=main)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/build.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/build-status/main)
 
 ---
 
-![Laravel Tatum.io Banner](https://raw.githubusercontent.com/HopekellDev/laravel-tatum-io/main/assets/banner.png)
+![Laravel Tatum.io Banner](https://raw.githubusercontent.com/HopekellDev/Laravel-Tatum.io/main/assets/banner.png)
 
 ## 🚀 Introduction
 
@@ -55,7 +55,7 @@ This package provides a clean Laravel-style fluent API structure for interacting
 ## 📦 Installation
 
 ```bash
-composer require hopekelldev/laravel-tatum-io
+composer require HopekellDev/Laravel-Tatum.io
 ```
 
 Publish config:
