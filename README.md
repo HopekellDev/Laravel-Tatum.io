@@ -55,7 +55,7 @@ This package provides a clean Laravel-style fluent API structure for interacting
 ## 📦 Installation
 
 ```bash
-composer require HopekellDev/Laravel-Tatum.io
+composer require hopekelldev/laravel-tatum-io
 ```
 
 Publish config:
