@@ -1,32 +1,32 @@
 # ⛓ HopekellDev Laravel Tatum.io
 
-![Packagist Version](https://img.shields.io/packagist/v/HopekellDev/Laravel-Tatum.io)
-![PHP Version](https://img.shields.io/packagist/php-v/HopekellDev/Laravel-Tatum.io)
+![Packagist Version](https://img.shields.io/packagist/v/hopekelldev/laravel-tatum-io)
+![PHP Version](https://img.shields.io/packagist/php-v/hopekelldev/laravel-tatum-io)
 ![Laravel Version](https://img.shields.io/badge/Laravel-13.x-red)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Downloads](https://img.shields.io/packagist/dt/HopekellDev/Laravel-Tatum.io)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/?branch=main)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
-[![Build Status](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/badges/build.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/Laravel-Tatum.io/build-status/main)
+![Downloads](https://img.shields.io/packagist/dt/hopekelldev/laravel-tatum-io)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/?branch=main)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/badges/build.png?b=main)](https://scrutinizer-ci.com/g/HopekellDev/laravel-tatum-io/build-status/main)
 
 ---
 
-![Laravel Tatum.io Banner](https://raw.githubusercontent.com/HopekellDev/Laravel-Tatum.io/main/assets/banner.png)
+![Laravel Tatum.io Banner](https://raw.githubusercontent.com/HopekellDev/laravel-tatum-io/main/assets/banner.png)
 
 ## 🚀 Introduction
 
-**HopekellDev Laravel Tatum.io** is a modern, lightweight, and developer-friendly Laravel SDK for selected Tatum.io APIs for Laravel 10, 11, 12, 13 and above.
+**HopekellDev Laravel Tatum.io** is a modern, lightweight, and developer-friendly Laravel SDK for selected Tatum.io APIs.
 
 Built specifically for:
 
-* ⚡ Laravel 10, 11, 12 & 13
-* 🧠 PHP 8.2+
-* ⛓ Blockchain infrastructure
-* 💰 Virtual accounts
-* 🪙 Smart contracts
-* 🔥 NFT & token operations
-* 🛡 KMS security operations
-* 📦 Laravel auto-discovery
+- ⚡ Laravel 10, 11, 12 & 13
+- 🧠 PHP 8.2+
+- ⛓ Blockchain infrastructure
+- 💰 Virtual accounts
+- 🪙 Smart contracts
+- 🔥 NFT & token operations
+- 🛡 KMS security operations
+- 📦 Laravel auto-discovery
 
 This package provides a clean Laravel-style fluent API structure for interacting with Tatum blockchain infrastructure.
 
@@ -34,28 +34,28 @@ This package provides a clean Laravel-style fluent API structure for interacting
 
 ## ✨ Features
 
-* ✅ Laravel auto-discovery
-* ✅ Modern fluent API structure
-* ✅ Blockchain RPC support
-* ✅ NFT smart contract support
-* ✅ ERC-20 token support
-* ✅ ERC-1155 token support
-* ✅ Marketplace support
-* ✅ Auction support
-* ✅ Gas Pump support
-* ✅ Virtual Accounts support
-* ✅ Blockchain utility helpers
-* ✅ KMS security endpoints
-* ✅ Standardized API responses
-* ✅ Built-in exception handling
-* ✅ Easily extendable architecture
+- ✅ Laravel auto-discovery
+- ✅ Modern fluent API structure
+- ✅ Blockchain RPC support
+- ✅ NFT smart contract support
+- ✅ ERC-20 token support
+- ✅ ERC-1155 token support
+- ✅ Marketplace support
+- ✅ Auction support
+- ✅ Gas Pump support
+- ✅ Virtual Accounts support
+- ✅ Blockchain utility helpers
+- ✅ KMS security endpoints
+- ✅ Standardized API responses
+- ✅ Built-in exception handling
+- ✅ Easily extendable architecture
 
 ---
 
 ## 📦 Installation
 
 ```bash
-composer require HopekellDev/Laravel-Tatum.io
+composer require hopekelldev/laravel-tatum-io
 ```
 
 Publish config:
@@ -95,27 +95,21 @@ return $response;
 
 # 📘 Documentation
 
----
-
-# ⛓ Blockchain RPC
+## ⛓ Blockchain RPC
 
 Supported chains:
 
-* Bitcoin
-* Ethereum
-* BNB Smart Chain
-* Polygon
-* Tron
-* Solana
-* Litecoin
-* Dogecoin
-* XRP
+- Bitcoin
+- Ethereum
+- BNB Smart Chain
+- Polygon
+- Tron
+- Solana
+- Litecoin
+- Dogecoin
+- XRP
 
----
-
-## Bitcoin
-
-### Generate Wallet
+### Bitcoin Wallet
 
 ```php
 Tatum::blockchainRpc()
@@ -123,35 +117,7 @@ Tatum::blockchainRpc()
     ->generateWallet();
 ```
 
-### Generate Address
-
-```php
-Tatum::blockchainRpc()
-    ->bitcoin()
-    ->generateAddress($xpub, 0);
-```
-
-### Get Transaction
-
-```php
-Tatum::blockchainRpc()
-    ->bitcoin()
-    ->getTransaction($txId);
-```
-
----
-
-## Ethereum
-
-### Generate Wallet
-
-```php
-Tatum::blockchainRpc()
-    ->ethereum()
-    ->generateWallet();
-```
-
-### Get Balance
+### Ethereum Balance
 
 ```php
 Tatum::blockchainRpc()
@@ -159,31 +125,11 @@ Tatum::blockchainRpc()
     ->getBalance($address);
 ```
 
-### Estimate Gas
-
-```php
-Tatum::blockchainRpc()
-    ->ethereum()
-    ->estimateGas();
-```
-
 ---
 
-# 🪙 Smart Contracts
+## 🪙 Smart Contracts
 
----
-
-## NFT (ERC-721)
-
-### Deploy NFT Contract
-
-```php
-Tatum::smartContracts()
-    ->nft()
-    ->deploy($data);
-```
-
-### Mint NFT
+### NFT Minting
 
 ```php
 Tatum::smartContracts()
@@ -191,35 +137,7 @@ Tatum::smartContracts()
     ->mint($data);
 ```
 
-### Transfer NFT
-
-```php
-Tatum::smartContracts()
-    ->nft()
-    ->transfer($data);
-```
-
----
-
-## Fungible Tokens (ERC-20)
-
-### Deploy Token
-
-```php
-Tatum::smartContracts()
-    ->fungibleTokens()
-    ->deploy($data);
-```
-
-### Mint Token
-
-```php
-Tatum::smartContracts()
-    ->fungibleTokens()
-    ->mint($data);
-```
-
-### Transfer Token
+### ERC-20 Token Transfer
 
 ```php
 Tatum::smartContracts()
@@ -227,31 +145,7 @@ Tatum::smartContracts()
     ->transfer($data);
 ```
 
----
-
-## Multi Tokens (ERC-1155)
-
-### Deploy Multi Token
-
-```php
-Tatum::smartContracts()
-    ->multiTokens()
-    ->deploy($data);
-```
-
-### Mint Multi Token
-
-```php
-Tatum::smartContracts()
-    ->multiTokens()
-    ->mint($data);
-```
-
----
-
-## Marketplace
-
-### Create Listing
+### Marketplace Listing
 
 ```php
 Tatum::smartContracts()
@@ -259,53 +153,11 @@ Tatum::smartContracts()
     ->createListing($data);
 ```
 
-### Buy Item
-
-```php
-Tatum::smartContracts()
-    ->marketplace()
-    ->buy($data);
-```
-
 ---
 
-## Auction
+## 🏦 Virtual Accounts
 
-### Create Auction
-
-```php
-Tatum::smartContracts()
-    ->auction()
-    ->create($data);
-```
-
-### Bid
-
-```php
-Tatum::smartContracts()
-    ->auction()
-    ->bid($data);
-```
-
----
-
-## Gas Pump
-
-### Activate Gas Pump
-
-```php
-Tatum::smartContracts()
-    ->gasPump()
-    ->activate($data);
-```
-
----
-
-# 🏦 Virtual Accounts
-
----
-
-## Create Account
+### Create Virtual Account
 
 ```php
 Tatum::virtualAccounts()
@@ -313,9 +165,7 @@ Tatum::virtualAccounts()
     ->create($data);
 ```
 
----
-
-## Create Customer
+### Create Customer
 
 ```php
 Tatum::virtualAccounts()
@@ -323,19 +173,7 @@ Tatum::virtualAccounts()
     ->create($data);
 ```
 
----
-
-## Create Transaction
-
-```php
-Tatum::virtualAccounts()
-    ->transaction()
-    ->create($data);
-```
-
----
-
-## Create Withdrawal
+### Create Withdrawal
 
 ```php
 Tatum::virtualAccounts()
@@ -345,11 +183,7 @@ Tatum::virtualAccounts()
 
 ---
 
-# 🔔 Blockchain Notifications
-
----
-
-## Get All Subscriptions
+## 🔔 Blockchain Notifications
 
 ```php
 Tatum::blockchainNotifications()
@@ -359,31 +193,9 @@ Tatum::blockchainNotifications()
 
 ---
 
-## Delete Subscription
+## 🛡 Security
 
-```php
-Tatum::blockchainNotifications()
-    ->subscriptions()
-    ->delete($id);
-```
-
----
-
-# 🛡 Security
-
----
-
-## Key Management System
-
-### Store Key
-
-```php
-Tatum::security()
-    ->keyManagementSystem()
-    ->store($data);
-```
-
-### Sign Transaction
+### KMS Sign Transaction
 
 ```php
 Tatum::security()
@@ -393,11 +205,7 @@ Tatum::security()
 
 ---
 
-# 🧰 Utilities
-
----
-
-## Blockchain Utilities
+## 🧰 Utilities
 
 ### Broadcast Transaction
 
@@ -407,107 +215,61 @@ Tatum::utils()
     ->broadcast($data);
 ```
 
-### Validate Address
-
-```php
-Tatum::utils()
-    ->blockchainUtils()
-    ->validateAddress('BTC', $address);
-```
-
----
-
-## Service Utilities
-
-### Health Check
-
-```php
-Tatum::utils()
-    ->serviceUtils()
-    ->health();
-```
-
-### Ping API
-
-```php
-Tatum::utils()
-    ->serviceUtils()
-    ->ping();
-```
-
 ---
 
 # 📚 Covered Modules
 
 ## ✅ Blockchain RPC
 
-* Bitcoin
-* Ethereum
-* BSC
-* Polygon
-* Tron
-* Solana
-* Litecoin
-* Dogecoin
-* XRP
-
----
+- Bitcoin
+- Ethereum
+- BSC
+- Polygon
+- Tron
+- Solana
+- Litecoin
+- Dogecoin
+- XRP
 
 ## ✅ Smart Contracts
 
-* NFT (ERC-721)
-* Fungible Tokens (ERC-20)
-* Multi Tokens (ERC-1155)
-* Marketplace
-* Auction
-* Gas Pump
-
----
+- NFT (ERC-721)
+- Fungible Tokens (ERC-20)
+- Multi Tokens (ERC-1155)
+- Marketplace
+- Auction
+- Gas Pump
 
 ## ✅ Security
 
-* Key Management System
-
----
+- Key Management System
 
 ## ✅ Virtual Accounts
 
-* Account
-* Transaction
-* Customer
-* Virtual Currency
-* Order Book
-* Blockchain Addresses
-* Blockchain Operations
-* Blockchain Fees
-* Deposit
-* Withdrawal
-
----
+- Account
+- Transaction
+- Customer
+- Virtual Currency
+- Order Book
+- Blockchain Addresses
+- Blockchain Operations
+- Blockchain Fees
+- Deposit
+- Withdrawal
 
 ## ✅ Blockchain Notifications
 
-* Subscriptions
-* Notifications
-
----
+- Subscriptions
+- Notifications
 
 ## ✅ Utilities
 
-* Blockchain Utilities
-* Service Utilities
+- Blockchain Utilities
+- Service Utilities
 
 ---
 
 # ⚠️ Error Handling
-
-All failed API requests throw:
-
-```php
-HopekellDev\Tatum\Exceptions\TatumException
-```
-
-Example:
 
 ```php
 use HopekellDev\Tatum\Facades\Tatum;
@@ -547,72 +309,28 @@ Tatum
 
 ---
 
-# 🗂 Package Folder Structure
-
-```txt
-src/
-├── Tatum.php
-├── TatumServiceProvider.php
-├── Facades/
-│   └── Tatum.php
-├── Exceptions/
-│   └── TatumException.php
-├── Helpers/
-│   ├── ApiResponse.php
-│   └── HasHttpClient.php
-└── Services/
-    ├── BlockchainNotifications/
-    ├── BlockchainRpc/
-    ├── SmartContracts/
-    ├── Security/
-    ├── VirtualAccounts/
-    └── Utils/
-```
-
----
-
 # 🤝 Contributing
 
 Contributions are welcome.
 
 You can help by:
 
-* Adding more Tatum endpoints
-* Improving documentation
-* Writing tests
-* Improving error handling
-* Improving blockchain coverage
-* Improving developer experience
+- Adding more Tatum endpoints
+- Improving documentation
+- Writing tests
+- Improving blockchain coverage
+- Improving developer experience
 
 ---
 
 # 🔥 Roadmap
 
-* [ ] Webhook signature verification
-* [ ] Webhook helper controller
-* [ ] Retry middleware
-* [ ] Logging support
-* [ ] Event dispatching
-* [ ] Queue helpers
-* [ ] Pest test suite
-* [ ] GitHub Actions CI
-* [ ] Mock responses for testing
-
----
-
-# 📢 Call for Collaboration
-
-This package is actively open for collaboration and improvement.
-
-If you are a Laravel developer, blockchain builder, fintech founder, Web3 developer, or open-source contributor, your support is welcome.
-
-Help improve this package by:
-
-* Submitting pull requests
-* Reporting bugs
-* Improving docs
-* Adding endpoints
-* Suggesting architecture improvements
+- [ ] Webhook signature verification
+- [ ] Retry middleware
+- [ ] Logging support
+- [ ] Pest test suite
+- [ ] GitHub Actions CI
+- [ ] Mock responses for testing
 
 ---
 
@@ -628,26 +346,20 @@ This package is open-sourced software licensed under the MIT License.
 
 Building scalable fintech, blockchain, SaaS, and backend systems.
 
+- GitHub: https://github.com/HopekellDev
+- Email: hopekelltech@gmail.com
+
 ---
 
 # ⭐ Support
 
 If this package helps you, please support it by:
 
-* Starring the repository
-* Sharing with Laravel developers
-* Reporting bugs
-* Suggesting improvements
-* Contributing code
-
----
-
-# 📬 Contact
-
-For support, collaboration, or questions:
-
-* GitHub Issues
-* Email: [hopekelltech@gmail.com](mailto:hopekelltech@gmail.com)
+- Starring the repository
+- Sharing with Laravel developers
+- Reporting bugs
+- Suggesting improvements
+- Contributing code
 
 ---
 
